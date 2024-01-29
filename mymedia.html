@@ -46,5 +46,25 @@
              </tr>
         </tbody>
     </table>
+    <hr>
+    <h3>Code Section</h3>
+
+    <p>About Snippet Description:The Below code Explains about A Singleton pattern in python is a design pattern that allows you to create just one instance of a class, throughout the lifetime of a program. Using a singleton pattern has many benefits.This pattern restricts the instantiation of a class to one object. It is a type of creational pattern and involves only one class to create methods and specified objects.</p>
+    
+    <pre>
+def singleton(myClass):
+	instances = {}
+	def getInstance(*args, **kwargs):
+		if myClass not in instances:
+			instances[myClass] = myClass(*args, **kwargs)
+		return instances[myClass]
+	return getInstance
+
+@singleton
+class TestClass(object):
+	pass 
+    </pre>
+
+    <p>Source Code: <a href="https://code.pieces.app/collections/python">Python Snippet Source</a></p>
 </body>
 </html>
